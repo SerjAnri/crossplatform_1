@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Kpr1</title>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="index.css">
+    <script src="src/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<div id="content" style="display: none">
+    <h1 id="title">Курс Валют</h1>
+
+    <div id="chooseContainer">
+
+
+        <label for="currencySelector">Валюта: </label><select id="currencySelector">
+        <option value="-">-</option>
+    </select>
+
+
+        <label> Номинал:
+            <input type="number" id="nominalInput">
+        </label>
+
+    </div>
+
+    <br>
+
+    <div id="selectedCurrencyContainer"></div>
+
+    <br>
+
+    <div id="output"></div>
+
+
+    <div id="changesContainer" style="display: none">
+        <h3>Динамика по сравнению с прошлым днем:</h3>
+    </div>
+    <div class="canvasContainer">
+        <canvas id="arrowCanvas" width="300" height="70">
+            Браузер не поддерживает Canvas
+        </canvas>
+    </div>
+
+    <h3>Статистика валют:</h3>
+    <div class="pieCanvasContainer">
+        <canvas id="pieCanvas" width="300" height="300">
+            Браузер не поддерживает Canvas
+        </canvas>
+        <div id="pieLegend"></div>
+        <br>
+    </div>
+
+    <div id="pros"></div>
+    <canvas id="chart1"></canvas>
+
+    <div id="cons"></div>
+    <canvas id="chart2"></canvas>
+
+    <div id="equal"></div>
+
+
+</div>
+<div id="contentError" style="display: none">
+    <h1>Ошибка, попробуйте обновить страницу.</h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+#title {
+    color: #000000;
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+
+}
+
+h3 {
+    color: #000000;
+    font-family: Tahoma, sans-serif;
+}
+
+#pros, #cons, #equal {
+    font-family: "Times New Roman", serif;
+}
+
+#content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contentError {
+    text-align: center;
+}
+
